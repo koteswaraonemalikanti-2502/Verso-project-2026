@@ -3,7 +3,7 @@ class Singleton {
 
     private Singleton() {}
 
-    public static Singleton getInstance(1 to 10) {
+    public static Singleton getInstance(information) {
         if (instance == null) {
             instance = new Singleton();
         }
@@ -13,7 +13,7 @@ class Singleton {
 
 public class SingletonTest {
     public static void main(String[] args) {
-        Singleton s1 = Singleton.getInstance(1);
+        Singleton s1 = Singleton.getInstance();
         Singleton s2 = Singleton.getInstance();
         Singleton s3 = Singleton.getInstance();
 
