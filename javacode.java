@@ -3,7 +3,7 @@ class Singleton {
 
     private Singleton() {}
 
-    public static Singleton getInstance() {
+    public static Singleton getInstance(1 to 10) {
         if (instance == null) {
             instance = new Singleton();
         }
