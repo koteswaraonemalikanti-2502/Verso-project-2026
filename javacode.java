@@ -1,22 +1,12 @@
-class Singleton {
-    private static Singleton instance;
-
-    private Singleton() {}
-
-    public static Singleton getInstance(information) {
-        if (instance == null) {
-            instance = new Singleton();
-        }
-        return instance;
-    }
-}
-
-public class SingletonTest {
+public class ReverseString {
     public static void main(String[] args) {
-        Singleton s1 = Singleton.getInstance();
-        Singleton s2 = Singleton.getInstance();
-        Singleton s3 = Singleton.getInstance();
+        String text = "Java";
 
-        System.out.println(s1 == s2 ==s3); // true
+        String reversed = "";
+        for (int i = text.length() - 1; i >= 0; i--) {
+            reversed += text.charAt(i);
+        }
+
+        System.out.println("Reversed string: " + reversed);
     }
 }
